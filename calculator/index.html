@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17191c">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="calculator-page">
+
+    <section class="calculator"
+             aria-label="Standard Calculator">
+
+      <!-- HEADER -->
+      <header class="calculator-header">
+        <h1>CALC<span>.</span></h1>
+        <span class="mode">STANDARD</span>
+      </header>
+
+      <!-- DISPLAY -->
+      <div class="display"
+           aria-live="polite"
+           aria-atomic="true">
+
+        <div id="previousDisplay"
+             class="previous-display"></div>
+
+        <div id="currentDisplay"
+             class="current-display">0</div>
+
+      </div>
+
+      <!-- CALCULATOR BUTTONS -->
+      <div class="buttons">
+
+        <button class="btn utility"
+                data-action="clear">AC</button>
+
+        <button class="btn utility"
+                data-action="sign">+/−</button>
+
+        <button class="btn utility"
+                data-action="percent">%</button>
+
+        <button class="btn operator"
+                data-action="operator"
+                data-value="/">÷</button>
+
+        <button class="btn number"
+                data-value="7">7</button>
+
+        <button class="btn number"
+                data-value="8">8</button>
+
+        <button class="btn number"
+                data-value="9">9</button>
+
+        <button class="btn operator"
+                data-action="operator"
+                data-value="*">×</button>
+
+        <button class="btn number"
+                data-value="4">4</button>
+
+        <button class="btn number"
+                data-value="5">5</button>
+
+        <button class="btn number"
+                data-value="6">6</button>
+
+        <button class="btn operator"
+                data-action="operator"
+                data-value="-">−</button>
+
+        <button class="btn number"
+                data-value="1">1</button>
+
+        <button class="btn number"
+                data-value="2">2</button>
+
+        <button class="btn number"
+                data-value="3">3</button>
+
+        <button class="btn operator"
+                data-action="operator"
+                data-value="+">+</button>
+
+        <button class="btn utility"
+                data-action="backspace"
+                aria-label="Backspace">⌫</button>
+
+        <button class="btn number"
+                data-value="0">0</button>
+
+        <button class="btn number"
+                data-action="decimal">.</button>
+
+        <button class="btn equals"
+                data-action="equals">=</button>
+
+      </div>
+
+    </section>
+
+    <p class="keyboard-hint">
+      Keyboard supported · Esc to clear
+    </p>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
